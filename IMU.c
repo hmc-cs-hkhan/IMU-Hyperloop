@@ -8,7 +8,7 @@ unsigned char* readIMU(){
 	unsigned char* hexData;
 	readBufferSPI(device, 32, hexData);
 	//return the number read 
-	return IMUData;
+	return hexData;
 }
 
 int identifyHeader(int device){
