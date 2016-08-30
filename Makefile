@@ -14,7 +14,7 @@ EXECUTABLE = main
 
 all: $(EXECUTABLE)
 
-main: main.c $(DEPS)
+main: IMU.c $(DEPS)
 	$(CC) -o $@ $^ -lpthread
 
 clean:
