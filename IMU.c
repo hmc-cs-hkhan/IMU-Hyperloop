@@ -1,4 +1,4 @@
-#include <libBBB.c>
+#include "libBBB.h"
 
 unsigned char* readIMU(){
 	//read from a serial port with a specific header
