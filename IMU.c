@@ -1,4 +1,5 @@
 #include "libBBB.h"
+#include <stdbool.h>
 
 unsigned char* readIMU(){
 	//read from a serial port with a specific header
@@ -17,7 +18,7 @@ int identifyHeader(int device){
 		readByteSPI(device, firstByte);
 		if(firstByte == 0xFE){
 			unsigned char* restOfHeader;
-			readBufferSPI(device, 3, restOfHeader)
+			readBufferSPI(device, 3, restOfHeader);
 			if (restOfHeader == 0x8100AA){
 				return 0;
 			}
