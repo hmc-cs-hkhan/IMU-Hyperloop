@@ -48,7 +48,7 @@ int identifyHeader(int device){
 
 
 unsigned char* main(){
-	unsigned char* hexdata = readIMU();
+	unsigned char* hexData = readIMU();
 	printf("Read from IMU");
 	for (int i = 0; i < 10; i++){
     printf("%02X", hexData[i]);
